@@ -1,0 +1,4 @@
+crewai
+langchain-google-genai #to interact with any gemini models
+load_dotenv #Any environment i'll be creating ill be able to use this
+crewai_tools
