@@ -1,11 +1,12 @@
 from crewai import Agent
 from tools import tool
+import os
 from dotenv import load_dotenv
 load_dotenv()
 #too call gemini models one importtant library we are going to use below
-from langchain_google_genai import GoogleGenerativeAi
+from langchain_google_genai import ChatGoogleGenerativeAI
 ##Call the gemini models
-llm  = GoogleGenerativeAi(
+llm  = ChatGoogleGenerativeAI(
                                 model="gemini-1.5-flash",
                                 verbose=True,
                                 temperature=0.5,
